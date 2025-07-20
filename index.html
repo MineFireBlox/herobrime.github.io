@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Records App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📁 Medical Records</h1>
+      <p>Store and access your health documents securely</p>
+    </header>
+
+    <form id="recordForm" class="card">
+      <h2>Add New Record</h2>
+      <div class="form-group">
+        <label for="patientName">Patient Name</label>
+        <input type="text" id="patientName" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="recordDate">Date</label>
+        <input type="date" id="recordDate" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea id="notes" rows="3"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="fileUpload">Upload File (PDF/Image)</label>
+        <input type="file" id="fileUpload" accept=".pdf,.jpg,.jpeg,.png">
+      </div>
+      
+      <button type="submit" class="submit-btn">Save Record</button>
+    </form>
+
+    <div id="recordsList" class="records-container"></div>
+
+    <!-- File Preview Modal -->
+    <div id="filePreviewModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="filePreviewFrame"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
