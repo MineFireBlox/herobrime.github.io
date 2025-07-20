@@ -1,6 +1,6 @@
 // Supabase Setup
 const supabaseUrl = 'https://ocempnupnazmapuhpkhb.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9jZW1wbnVwbmF6bWFwdWhwa2hiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5OTY2NjcsImV4cCI6MjA2ODU3MjY2N30.TTeCYevZkOec8NbeNOmF59dk1APn_EmVZYl7fv29-QA';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9jZW1wbnVwbmF6bWFwdWhwa2hiIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1Mjk5NjY2NywiZXhwIjoyMDY4NTcyNjY3fQ.GlExDpy-UR0yTjyCwPBv3xshxZCmQW8OSgNgEKhJvUY';
 const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 // DOM Elements
